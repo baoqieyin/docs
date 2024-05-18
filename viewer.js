@@ -4320,7 +4320,7 @@ var defaultOptions = {
     kind: OptionKind.API
   },
   cMapUrl: {
-    value: 'https://fastly.jsdelivr.net/npm/pdfjs-dist@2.2.228/cmaps/',
+    value: 'https://testingcf.jsdelivr.net/npm/pdfjs-dist@2.2.228/cmaps/',
     kind: OptionKind.API
   },
   disableAutoFetch: {
@@ -4369,7 +4369,7 @@ var defaultOptions = {
     kind: OptionKind.WORKER
   },
   workerSrc: {
-    value: 'https://fastly.jsdelivr.net/npm/pdfjs-dist@2.2.228/build/pdf.worker.min.js',
+    value: 'https://testingcf.jsdelivr.net/npm/pdfjs-dist@2.2.228/build/pdf.worker.min.js',
     kind: OptionKind.WORKER
   }
 };
@@ -4477,7 +4477,7 @@ var pdfjsLib;
 if (typeof window !== 'undefined' && window['pdfjs-dist/build/pdf']) {
   pdfjsLib = window['pdfjs-dist/build/pdf'];
 } else {
-  pdfjsLib = require('https://fastly.jsdelivr.net/npm/pdfjs-dist@2.2.228/build/pdf.min.js');
+  pdfjsLib = require('https://testingcf.jsdelivr.net/npm/pdfjs-dist@2.2.228/build/pdf.min.js');
 }
 
 module.exports = pdfjsLib;
